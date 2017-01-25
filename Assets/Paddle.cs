@@ -4,10 +4,12 @@ using System.Collections;
 
 public class Paddle : MonoBehaviour {
 	public Text points;
+	private AudioSource audio;
 
 	// Use this for initialization
 	void Start () {
 		GameStatus.points = 0;
+		audio = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
